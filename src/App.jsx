@@ -21,6 +21,7 @@ const getScreenshots = (folder) => {
   return Object.entries(screenshotFiles)
     .filter(([path]) => path.startsWith(`./Screenshots/${folder}/`))
     .sort(([a], [b]) => a.localeCompare(b))
+    .slice(0, 5)
     .map(([, image]) => image)
 }
 
