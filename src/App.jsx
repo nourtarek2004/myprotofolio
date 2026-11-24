@@ -337,7 +337,7 @@ function App() {
             <h4>Key contributions</h4><ul className="modal-list">{activeProject.details.map(detail => <li key={detail}><CheckCircle2 size={16} />{detail}</li>)}</ul>
             {activeProject.images.length > 0 && (
                 <div className="modal-gallery">
-                  <h4>Project Screenshots</h4>
+                  <h2> Some  Screenshots</h2>
 
                   <div className="screenshot-scroll">
                     {activeProject.images.map((image, index) => (
